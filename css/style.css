@@ -120,17 +120,12 @@ a { color: var(--blue); }
 .nav-cta {
   background: var(--blue);
   color: #fff !important;
-  padding: 11px 22px;
+  padding: 11px 30px;
   border-radius: 8px;
   border-bottom: none !important;
   font-weight: 700;
-  transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
 }
-.nav-cta:hover {
-  background: var(--blue-dark);
-  box-shadow: 0 6px 16px rgba(41, 84, 224, 0.28);
-  transform: translateY(-1px);
-}
+.nav-cta:hover { background: var(--blue-dark); }
 
 .nav-toggle {
   display: none;
