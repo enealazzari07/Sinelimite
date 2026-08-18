@@ -117,15 +117,15 @@ a { color: var(--blue); }
   border-bottom-color: var(--blue);
 }
 
-.nav-cta {
+.nav-links a.nav-cta {
   background: var(--blue);
-  color: #fff !important;
+  color: #fff;
   padding: 11px 30px;
   border-radius: 8px;
-  border-bottom: none !important;
+  border-bottom: none;
   font-weight: 700;
 }
-.nav-cta:hover { background: var(--blue-dark); }
+.nav-links a.nav-cta:hover { background: var(--blue-dark); }
 
 .nav-toggle {
   display: none;
