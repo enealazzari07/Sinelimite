@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt – sine limite</title>
+<meta name="description" content="Kontaktiere sine limite in Basel für Nachhilfe in Mathematik und Physik.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html" aria-label="sine limite – Startseite">
+      <img src="img/logo.svg" alt="sine limite">
+    </a>
+    <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="angebot.html">Angebot</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="ortsplan.html">Ortsplan</a></li>
+      <li><a href="raetsel.html">Rätsel des Monats</a></li>
+      <li><a class="nav-cta" href="kontakt.html" aria-current="page">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <div class="page-header">
+    <div class="container">
+      <span class="eyebrow">Kontakt</span>
+      <h1>Melde dich bei uns</h1>
+      <p class="muted">Je früher, je besser – wir melden uns schnellstmöglich zurück.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+
+        <div>
+          <h2 style="margin-bottom:20px;">Kontaktdaten</h2>
+
+          <div class="contact-info-item">
+            <div class="card-icon">🏠</div>
+            <div>
+              <h3 style="margin-bottom:4px;">Adresse</h3>
+              <p class="muted">sine limite<br>Gotthelfstrasse 106<br>4054 Basel</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="card-icon">☎</div>
+            <div>
+              <h3 style="margin-bottom:4px;">Telefon</h3>
+              <p class="muted">
+                Tel.: <a href="tel:+41612619682">+41 (0)61 261 96 82</a><br>
+                Mobile: <a href="tel:+41793025524">+41 (0)79 302 55 24</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="card-icon">✉</div>
+            <div>
+              <h3 style="margin-bottom:4px;">E-Mail</h3>
+              <p class="muted"><a href="mailto:info@sinelimite.ch">info@sinelimite.ch</a></p>
+            </div>
+          </div>
+
+          <p class="muted" style="margin-top:22px;">Die Nachhilfestunden finden in unseren Räumen an der Gotthelfstrasse statt. Den genauen Standort findest du auf dem <a href="ortsplan.html">Ortsplan</a>.</p>
+        </div>
+
+        <div class="card">
+          <h2 style="margin-bottom:6px;">Schreib uns</h2>
+          <p class="muted" style="margin-bottom:24px;">Kurze Nachricht genügt – wir melden uns zeitnah bei dir.</p>
+
+          <form action="mailto:info@sinelimite.ch" method="post" enctype="text/plain">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="Name" required>
+            </div>
+            <div class="form-field">
+              <label for="email">E-Mail</label>
+              <input type="email" id="email" name="E-Mail" required>
+            </div>
+            <div class="form-field">
+              <label for="fach">Fach</label>
+              <select id="fach" name="Fach">
+                <option>Mathematik</option>
+                <option>Physik</option>
+                <option>Statistik</option>
+                <option>Weiss ich noch nicht</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="nachricht">Nachricht</label>
+              <textarea id="nachricht" name="Nachricht" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Nachricht senden</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="img/logo.svg" alt="sine limite">
+        <p style="color:#8f92a0; font-size:0.92rem; max-width:32ch;">Nachhilfeschule für Mathematik, Physik und Statistik in Basel – für alle Schulstufen.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="angebot.html">Angebot</a>
+        <a href="faq.html">FAQ</a>
+        <a href="ortsplan.html">Ortsplan</a>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <a href="mailto:info@sinelimite.ch">info@sinelimite.ch</a>
+        <a href="tel:+41612619682">+41 (0)61 261 96 82</a>
+        <a href="kontakt.html">Gotthelfstrasse 106, 4054 Basel</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 sine limite</span>
+      <span>Basel, Schweiz</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

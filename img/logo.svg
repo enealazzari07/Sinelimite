@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" role="img" aria-label="sine limite">
+  <text x="8" y="118" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="150" fill="#3355d8">&#8747;</text>
+  <text x="95" y="102" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="58">
+    <tspan fill="#c53a2b">i</tspan><tspan fill="#2f7d4f">n</tspan><tspan fill="#3355d8">e</tspan><tspan> </tspan><tspan fill="#d99a1f">l</tspan><tspan fill="#3355d8">i</tspan><tspan fill="#c53a2b">m</tspan><tspan fill="#3355d8">i</tspan><tspan fill="#2f7d4f">t</tspan><tspan fill="#d99a1f">e</tspan>
+  </text>
+  <text x="300" y="140" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-style="italic" font-size="26">
+    <tspan fill="#2f7d4f">n</tspan><tspan fill="#3355d8"> &#8594; </tspan><tspan fill="#16181d">&#8734;</tspan>
+  </text>
+</svg>
