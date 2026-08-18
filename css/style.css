@@ -523,10 +523,12 @@ section { padding: 68px 0; }
 /* ---------- Riddle page ---------- */
 
 .riddle-card {
+  position: relative;
   background: #fff;
   border: 1px solid var(--rule);
   border-radius: var(--radius);
   padding: 40px;
+  overflow: hidden;
 }
 
 .riddle-card .eyebrow { margin-bottom: 8px; }
@@ -615,6 +617,48 @@ section { padding: 68px 0; }
   z-index: 0;
 }
 
+/* ---------- Doodles ---------- */
+
+.doodle {
+  position: absolute;
+  color: var(--blue);
+  opacity: 0.16;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.doodle-hero-pencil {
+  width: 84px;
+  height: 84px;
+  top: -18px;
+  right: 18px;
+  transform: rotate(18deg);
+}
+
+.doodle-page-geo {
+  width: 110px;
+  height: 110px;
+  top: 6px;
+  right: 4vw;
+  transform: rotate(-6deg);
+}
+
+.doodle-page-calc {
+  width: 78px;
+  height: 78px;
+  bottom: -14px;
+  right: 5vw;
+  transform: rotate(9deg);
+}
+
+.doodle-riddle-geo {
+  width: 92px;
+  height: 92px;
+  bottom: -18px;
+  right: -18px;
+  transform: rotate(-10deg);
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 860px) {
@@ -647,4 +691,5 @@ section { padding: 68px 0; }
   .grid-2 { grid-template-columns: 1fr; }
   section { padding: 44px 0; }
   .pricing-table { display: block; overflow-x: auto; }
+  .doodle { display: none; }
 }
