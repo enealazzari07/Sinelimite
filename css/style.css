@@ -66,7 +66,7 @@ a { color: var(--blue); }
 }
 
 .brand img {
-  height: 34px;
+  height: 46px;
   width: auto;
   display: block;
 }
@@ -548,7 +548,7 @@ section { padding: 68px 0; }
 }
 
 .footer-brand img {
-  height: 28px;
+  height: 36px;
   width: auto;
   margin-bottom: 14px;
   filter: brightness(0) invert(1);
