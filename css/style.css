@@ -216,6 +216,47 @@ a { color: var(--blue); }
   z-index: 0;
 }
 
+/* Second copy of the sketch with darker lines. Its width grows on hover so
+   the drawing appears to be redrawn left to right; the soft mask edge acts
+   as the pencil tip. */
+.hero-draw {
+  position: absolute;
+  top: -30px;
+  bottom: -30px;
+  left: -30px;
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to right, #000 0%, #000 80%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to right, #000 0%, #000 80%, rgba(0,0,0,0) 100%);
+  transition: width 0.55s ease, opacity 0.4s ease;
+}
+
+.hero-draw-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: calc(100vw + 60px);
+  background: url("../img/hero-bg.jpg") center 42% / cover no-repeat;
+  filter: blur(5px) contrast(1.5) saturate(0.85);
+}
+
+@media (hover: hover) and (min-width: 861px) {
+  .hero:hover .hero-draw {
+    width: calc(100vw + 60px);
+    opacity: 0.45;
+    transition: width 1.5s cubic-bezier(0.35, 0.1, 0.25, 1), opacity 0.35s ease;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-draw,
+  .hero:hover .hero-draw { transition: none; }
+}
+
 .hero .container {
   position: relative;
   z-index: 1;
