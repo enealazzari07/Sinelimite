@@ -15,22 +15,4 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
-
-  // Hero: reveal the darker sketch lines in a circle around the cursor.
-  var hero = document.querySelector(".hero");
-  var draw = hero && hero.querySelector(".hero-draw");
-  var finePointer = window.matchMedia("(hover: hover) and (min-width: 861px)");
-
-  if (hero && draw && finePointer.matches) {
-    hero.addEventListener("mousemove", function (event) {
-      var box = hero.getBoundingClientRect();
-      draw.style.setProperty("--mx", event.clientX - box.left + 30 + "px");
-      draw.style.setProperty("--my", event.clientY - box.top + 30 + "px");
-      hero.classList.add("is-drawing");
-    });
-
-    hero.addEventListener("mouseleave", function () {
-      hero.classList.remove("is-drawing");
-    });
-  }
 });

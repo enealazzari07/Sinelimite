@@ -221,34 +221,6 @@ a { color: var(--blue); }
   z-index: -1;
 }
 
-/* Second copy of the sketch with darker lines, revealed only in a soft
-   circle around the cursor so the pencil strokes read a bit stronger there. */
-.hero-draw {
-  position: absolute;
-  inset: -30px;
-  background: url("../img/hero-bg.jpg") center 42% / cover no-repeat;
-  /* Crisper and desaturated so the pencil strokes read as lines; multiply
-     keeps the paper untouched and only darkens the strokes (no glow). */
-  filter: contrast(1.15) saturate(0.3) brightness(1.04);
-  mix-blend-mode: multiply;
-  opacity: 0;
-  z-index: 0;
-  pointer-events: none;
-  --mx: 50%;
-  --my: 50%;
-  -webkit-mask-image: radial-gradient(circle 190px at var(--mx) var(--my), #000 0%, rgba(0,0,0,0.75) 45%, rgba(0,0,0,0) 100%);
-  mask-image: radial-gradient(circle 190px at var(--mx) var(--my), #000 0%, rgba(0,0,0,0.75) 45%, rgba(0,0,0,0) 100%);
-  transition: opacity 0.35s ease;
-}
-
-@media (hover: hover) and (min-width: 861px) {
-  .hero.is-drawing .hero-draw { opacity: 0.18; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-draw { transition: none; }
-}
-
 .hero .container {
   position: relative;
   z-index: 1;
