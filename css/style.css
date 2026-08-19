@@ -323,10 +323,12 @@ section { padding: 68px 0; }
 /* Kept for markup compatibility – alles ist bewusst linksbündig. */
 .section-head.center { text-align: left; }
 
+/* Unterhalb des Titelblocks läuft eine einzige durchgehende Fläche –
+   die Klasse bleibt im Markup, setzt aber keinen eigenen Grund mehr. */
 .section-alt {
-  background: var(--bg-alt);
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
+  background: transparent;
+  border-top: none;
+  border-bottom: none;
 }
 
 /* ---------- Numbered feature list ---------- */
