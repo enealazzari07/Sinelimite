@@ -5,8 +5,10 @@
 :root {
   --ink: #14161a;
   --ink-soft: #61646d;
-  --bg: #ffffff;
-  --bg-alt: #f6f4f0;
+  /* Papierweiss und Beige liegen bewusst dicht beieinander, damit der
+     Wechsel zwischen den Abschnitten kaum auffällt. */
+  --bg: #fdfcfb;
+  --bg-alt: #f8f6f2;
   --rule: #e6e2da;
   --rule-strong: #d3cec3;
 
@@ -215,7 +217,7 @@ a { color: var(--blue); }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(100deg, rgba(246, 244, 240, 0.92) 0%, rgba(246, 244, 240, 0.75) 45%, rgba(246, 244, 240, 0.55) 100%);
+  background: linear-gradient(100deg, rgba(248, 246, 242, 0.92) 0%, rgba(248, 246, 242, 0.75) 45%, rgba(248, 246, 242, 0.55) 100%);
   z-index: -1;
 }
 
@@ -661,7 +663,7 @@ section { padding: 68px 0; }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(100deg, rgba(246, 244, 240, 0.92) 0%, rgba(246, 244, 240, 0.75) 45%, rgba(246, 244, 240, 0.55) 100%);
+  background: linear-gradient(100deg, rgba(248, 246, 242, 0.92) 0%, rgba(248, 246, 242, 0.75) 45%, rgba(248, 246, 242, 0.55) 100%);
   z-index: 0;
 }
 
