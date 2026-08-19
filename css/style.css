@@ -369,6 +369,14 @@ section { padding: 68px 0; }
   font-size: 1.3rem;
   margin-bottom: 4px;
   line-height: 1;
+  color: var(--ink);
+}
+
+.card-icon svg {
+  width: 26px;
+  height: 26px;
+  display: block;
+  margin-top: 2px;
 }
 
 /* ---------- Plain list (school levels etc.) ---------- */
