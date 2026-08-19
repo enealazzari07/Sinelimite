@@ -229,7 +229,7 @@ a { color: var(--blue); }
   background: url("../img/hero-bg.jpg") center 42% / cover no-repeat;
   /* Crisper and desaturated so the pencil strokes read as lines; multiply
      keeps the paper untouched and only darkens the strokes (no glow). */
-  filter: blur(1.5px) contrast(1.35) saturate(0.25) brightness(1.06);
+  filter: contrast(1.15) saturate(0.3) brightness(1.04);
   mix-blend-mode: multiply;
   opacity: 0;
   z-index: 0;
@@ -242,7 +242,7 @@ a { color: var(--blue); }
 }
 
 @media (hover: hover) and (min-width: 861px) {
-  .hero.is-drawing .hero-draw { opacity: 0.4; }
+  .hero.is-drawing .hero-draw { opacity: 0.18; }
 }
 
 @media (prefers-reduced-motion: reduce) {
